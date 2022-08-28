@@ -1,35 +1,35 @@
 load(
-    "@coinbase_rules_ruby//ruby/private:toolchain.bzl",
+    "@rules_ruby//ruby/private:toolchain.bzl",
     _toolchain = "ruby_toolchain",
 )
 load(
-    "@coinbase_rules_ruby//ruby/private:library.bzl",
+    "@rules_ruby//ruby/private:library.bzl",
     _library = "rb_library",
 )
 load(
-    "@coinbase_rules_ruby//ruby/private/binary:binary.bzl",
+    "@rules_ruby//ruby/private/binary:binary.bzl",
     _binary = "rb_binary",
     _test = "rb_test",
 )
 load(
-    "@coinbase_rules_ruby//ruby/private:bundle.bzl",
+    "@rules_ruby//ruby/private:bundle.bzl",
     _rb_bundle = "rb_bundle",
 )
 load(
-    "@coinbase_rules_ruby//ruby/private:rspec.bzl",
+    "@rules_ruby//ruby/private:rspec.bzl",
     _rb_rspec = "rb_rspec",
     _rb_rspec_test = "rb_rspec_test",
 )
 load(
-    "@coinbase_rules_ruby//ruby/private/rubocop:def.bzl",
+    "@rules_ruby//ruby/private/rubocop:def.bzl",
     _rubocop = "rubocop",
 )
 load(
-    "@coinbase_rules_ruby//ruby/private/gem:gemspec.bzl",
+    "@rules_ruby//ruby/private/gem:gemspec.bzl",
     _gemspec = "rb_gemspec",
 )
 load(
-    "@coinbase_rules_ruby//ruby/private:gem.bzl",
+    "@rules_ruby//ruby/private:gem.bzl",
     _gem = "rb_gem",
 )
 

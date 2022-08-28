@@ -1,6 +1,6 @@
 load(":providers.bzl", "RubyLibrary")
 
-RULES_RUBY_WORKSPACE_NAME = "@coinbase_rules_ruby"
+RULES_RUBY_WORKSPACE_NAME = "@rules_ruby"
 TOOLCHAIN_TYPE_NAME = "%s//ruby:toolchain_type" % RULES_RUBY_WORKSPACE_NAME
 
 DEFAULT_RSPEC_ARGS = {"--format": "documentation", "--force-color": None}

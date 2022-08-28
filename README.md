@@ -46,13 +46,13 @@ Add `rules_ruby_dependencies` and `ruby_register_toolchains` into your `WORKSPAC
 # To get the latest, grab the 'master' branch.
 
 git_repository(
-    name = "coinbase_rules_ruby",
+    name = "rules_ruby",
     remote = "https://github.com/coinbase/rules_ruby.git",
     branch = "master",
 )
 
 load(
-    "@coinbase_rules_ruby//ruby:deps.bzl",
+    "@rules_ruby//ruby:deps.bzl",
     "ruby_register_toolchains",
     "rules_ruby_dependencies",
 )
@@ -95,7 +95,7 @@ Add `rb_library`, `rb_binary` or `rb_test` into your `BUILD.bazel` files.
 
 ```python
 load(
-    "@coinbase_rules_ruby//ruby:defs.bzl",
+    "@rules_ruby//ruby:defs.bzl",
     "rb_binary",
     "rb_library",
     "rb_test",
@@ -386,13 +386,13 @@ Example: `WORKSPACE`:
 
 ```python
 git_repository(
-    name = "coinbase_rules_ruby",
+    name = "rules_ruby",
     remote = "https://github.com/coinbase/rules_ruby.git",
     tag = "v0.1.0",
 )
 
 load(
-    "@coinbase_rules_ruby//ruby:deps.bzl",
+    "@rules_ruby//ruby:deps.bzl",
     "ruby_register_toolchains",
     "rules_ruby_dependencies",
 )
@@ -401,7 +401,7 @@ rules_ruby_dependencies()
 
 ruby_register_toolchains()
 
-load("@coinbase_rules_ruby//ruby:defs.bzl", "rb_bundle")
+load("@rules_ruby//ruby:defs.bzl", "rb_bundle")
 
 rb_bundle(
     name = "gems",

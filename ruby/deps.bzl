@@ -1,10 +1,10 @@
 # Repository rules
 load(
-    "@coinbase_rules_ruby//ruby/private:dependencies.bzl",
+    "@rules_ruby//ruby/private:dependencies.bzl",
     _rules_ruby_dependencies = "rules_ruby_dependencies",
 )
 load(
-    "@coinbase_rules_ruby//ruby/private:sdk.bzl",
+    "@rules_ruby//ruby/private:sdk.bzl",
     _register_toolchains = "ruby_register_toolchains",
 )
 

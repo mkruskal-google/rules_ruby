@@ -58,7 +58,7 @@ _ATTRS = {
         cfg = "host",
     ),
     "_gem_runner": attr.label(
-        default = Label("@coinbase_rules_ruby//ruby/private/gem:gem_runner.rb"),
+        default = Label("@rules_ruby//ruby/private/gem:gem_runner.rb"),
         allow_single_file = True,
     ),
     "gemspec": attr.label(

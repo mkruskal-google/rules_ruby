@@ -1,6 +1,6 @@
 package(default_visibility = ["//visibility:public"])
 
-load("@coinbase_rules_ruby//ruby:defs.bzl", "rb_library")
+load("@rules_ruby//ruby:defs.bzl", "rb_library")
 
 rb_library(
     name = "j",

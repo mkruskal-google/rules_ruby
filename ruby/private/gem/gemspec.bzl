@@ -116,7 +116,7 @@ _ATTRS = {
         cfg = "host",
     ),
     "_gemspec_builder": attr.label(
-        default = Label("@coinbase_rules_ruby//ruby/private/gem:gemspec_builder.rb"),
+        default = Label("@rules_ruby//ruby/private/gem:gemspec_builder.rb"),
         allow_single_file = True,
     ),
 }

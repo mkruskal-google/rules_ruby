@@ -1,4 +1,4 @@
-workspace(name = "coinbase_rules_ruby")
+workspace(name = "rules_ruby")
 
 load("@//ruby:deps.bzl", "rules_ruby_dependencies")
 
@@ -17,7 +17,7 @@ load("@//ruby:deps.bzl", "ruby_register_toolchains")
 ruby_register_toolchains()
 
 local_repository(
-    name = "coinbase_rules_ruby_ruby_tests_testdata_another_workspace",
+    name = "rules_ruby_ruby_tests_testdata_another_workspace",
     path = "ruby/tests/testdata/another_workspace",
 )
 
@@ -93,7 +93,7 @@ container_pull(
     repository = "library/ruby",
 )
 
-load("@coinbase_rules_ruby//ruby:defs.bzl", "bundle_install")
+load("@rules_ruby//ruby:defs.bzl", "bundle_install")
 
 bundle_install(
     name = "bundle",
